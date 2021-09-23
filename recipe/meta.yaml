@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidycensus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidycensus/tidycensus_{{ version }}.tar.gz
-  sha256: 37bb79c55d3c3334b98439bfc0427783cc800225a33c5ae4f33383470cfb3b54
+  sha256: 8914fdec64a86896f1faa3a92272d1cd008a194af4cd86eba2d69df5707062c0
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -65,13 +65,10 @@ test:
 about:
   home: https://github.com/walkerke/tidycensus
   license: MIT
-  summary: An integrated R interface to the decennial US Census and American Community Survey
-    APIs and the US Census Bureau's geographic boundary files. Allows R users to return
-    Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column
-    with feature geometry for all Census geographies.
+  summary: An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for all Census geographies.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
