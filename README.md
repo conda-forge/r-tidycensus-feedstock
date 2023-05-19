@@ -1,11 +1,11 @@
-About r-tidycensus
-==================
+About r-tidycensus-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidycensus-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/walkerke/tidycensus
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tidycensus-feedstock/blob/main/LICENSE.txt)
 
 Summary: An integrated R interface to the decennial US Census and American Community Survey APIs and the US Census Bureau's geographic boundary files. Allows R users to return Census and ACS data as tidyverse-ready data frames, and optionally returns a list-column with feature geometry for all Census geographies.
 
