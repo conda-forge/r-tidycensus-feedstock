@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.6.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidycensus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidycensus/tidycensus_{{ version }}.tar.gz
-  sha256: 6eb73e139d1aa1649d66edcbf8f148db9adb0eaf57e6f86c6b77ed0dd7eb7047
+  sha256: 443a662dad95a85d134f6849907d58cb7651f7c5b8fbfdaecc783a9625e61a98
 
 build:
   merge_build_host: true  # [win]
