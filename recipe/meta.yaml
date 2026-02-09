@@ -1,4 +1,4 @@
-{% set version = "1.7.3" %}
+{% set version = "1.7.5" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tidycensus_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tidycensus/tidycensus_{{ version }}.tar.gz
-  sha256: 5fbee8138584c25e326cae39e0928f6a993472b77db6be9626999cc5eb15c484
+  sha256: 244fa427990e9fb84683a4a01995b82cafa07ce4bcacbb234328afb804e2ce97
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
